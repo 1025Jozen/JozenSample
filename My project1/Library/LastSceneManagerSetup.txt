@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/BasicScripts/Async_Await/Test/async.unity
+- path: Assets/BasicScripts/Shader/SkyBox/Moon/Moon.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
