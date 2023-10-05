@@ -73,5 +73,7 @@ crashlytics-build.properties
 
 libburst-llvm-14.dylib
 ArtifactDB
-
 BurstCache/
+aosagi SDF.asset
+
+

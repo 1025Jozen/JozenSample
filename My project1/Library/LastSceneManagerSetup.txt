@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/BasicScripts/Shader/SkyBox/4_Moon/Moon.unity
+- path: Assets/BasicScripts/04_TargetLock/TargetLock.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
