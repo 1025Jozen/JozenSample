@@ -1,15 +1,18 @@
-public enum PlayerAllStatus
-{
-    none,
+namespace State {
+    public enum PlayerAllStatus
+    {
+        none,
 
-    idle,
-    walk,
-    run,
+        idle,
+        walk,
+        run,
 
-    ground,
-    jump,
-    fall,
-    swim,
-    warpAttack,
-    die
+        ground,
+        jump,
+        fall,
+        swim,
+        warpAttack,
+        die
+    }
 }
+
