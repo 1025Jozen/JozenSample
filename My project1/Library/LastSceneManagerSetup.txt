@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/BasicScripts/04_TargetLock/TargetLock.unity
+- path: Assets/BasicScripts/Etc/Rotation/Rotation.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

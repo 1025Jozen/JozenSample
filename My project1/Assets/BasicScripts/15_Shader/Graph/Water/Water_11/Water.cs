@@ -51,7 +51,7 @@ namespace WaterSample {
 
 
             Vector3 move = camRight.normalized * Input.GetAxis("Horizontal") + camForward.normalized * Input.GetAxis("Vertical");
-            cc.Move(move.normalized * Time.deltaTime * 2* ((Input.GetKey(KeyCode.LeftShift) ? 2 : 1)));
+            cc.Move(move.normalized * Time.deltaTime * 3 * ((Input.GetKey(KeyCode.LeftShift) ? 2 : 1)));
             if (move.magnitude > 0) transform.forward = move.normalized;//向きを変える
 
             //地面との当たり判定　isGroundに情報が入る
@@ -66,7 +66,7 @@ namespace WaterSample {
 
         //forの回数で生成する箇所を調整する
 
-        //スタート位置　終わり　　間隔　　　　　　    スピード　サイズ　寿命
+                          //スタート位置　終わり　生成角度間隔　　　　スピード　  サイズ　      寿命
         void CreateRipple(int Start, int End, int Delta, float Speed, float Size, float Lifetime) {
             Vector3 forward = ripple.transform.eulerAngles;//エフェクトの向きを保存
             forward.y = Start;//y軸回転させるためのスタート位置を設定
@@ -104,11 +104,11 @@ namespace WaterSample {
 
 
         private void OnTriggerStay(Collider other) {
-            //水に入っている間
-            if (other.gameObject.layer == 4 && VelocityXZ > 0.02f && Time.renderedFrameCount % 3 == 0) {
+            //水に入っている間 経過した描画フレーム総数などに合わせてParticle生成
+            if (other.gameObject.layer == 4 && VelocityXZ > 0.001f && Time.renderedFrameCount % 3 == 0) {
                 int y = (int)transform.eulerAngles.y;
                 //出す位置をyの回転角度に合わせる
-                //スタート位置　終わり　　間隔　　　　 スピード　サイズ　寿命
+                //スタート位置　終わり 間隔 スピード　サイズ　寿命        前方0度
                 CreateRipple(y - 270, y - 90, 3, 5, 0.5f, 1);
             }
         }
