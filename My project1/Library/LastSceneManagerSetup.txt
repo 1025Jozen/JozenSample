@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/BasicScripts/11_State_Command/State_Generic/State2Scene.unity
+- path: Assets/BasicScripts/11_UI_MVP/UI/UI.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
