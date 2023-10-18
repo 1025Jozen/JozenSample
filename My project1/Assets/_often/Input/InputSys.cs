@@ -331,7 +331,7 @@ public partial class @InputSys: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""Click"",
-                    ""type"": ""PassThrough"",
+                    ""type"": ""Button"",
                     ""id"": ""51d9986b-b51f-448f-afba-043f5ae8f9a5"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
