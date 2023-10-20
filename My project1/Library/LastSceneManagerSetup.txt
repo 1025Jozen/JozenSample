@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/BasicScripts/19_SE_BGM/Sound.unity
+- path: Assets/BasicScripts/Etc/Onnx/Onnx_MNIST.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

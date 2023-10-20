@@ -6,8 +6,8 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638330414280000000
-    m_Hash: 2550225872
+      ticks: 638333642120000000
+    m_Hash: 3381204221
   m_LockFileStatus:
     m_FilePath: /Users/jozenyuto/Desktop/Unity_/Unity_Template/Github/JozenSample/My
       project1/Packages/packages-lock.json
@@ -15,8 +15,8 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638330414380000000
-    m_Hash: 1153747867
+      ticks: 638333642120000000
+    m_Hash: 3970414604
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -90,40 +90,90 @@ m_ResolvedPackages:
   upmReserved: 
   assetStore:
     productId: 
-- packageId: jp.hadashikick.vcontainer@https://github.com/hadashiA/VContainer.git?path=VContainer/Assets/VContainer#1.13.2
+- packageId: com.unity.barracuda@3.0.0
   testable: 0
   isDirectDependency: 1
-  version: 1.13.2
-  source: 5
+  version: 3.0.0
+  source: 1
   resolvedPath: /Users/jozenyuto/Desktop/Unity_/Unity_Template/Github/JozenSample/My
-    project1/Library/PackageCache/jp.hadashikick.vcontainer@af7bd4ecab
-  assetPath: Packages/jp.hadashikick.vcontainer
-  name: jp.hadashikick.vcontainer
-  displayName: VContainer
+    project1/Library/PackageCache/com.unity.barracuda@3.0.0
+  assetPath: Packages/com.unity.barracuda
+  name: com.unity.barracuda
+  displayName: Barracuda
   author:
     name: 
     email: 
     url: 
   category: 
   type: 
-  description: The extra fast DI (Dependency Injection) for Unity
+  description: Barracuda is lightweight and cross-platform Neural Net inference library.
+    Barracuda supports inference both on GPU and CPU.
   status: 0
   errors: []
   versions:
-    all: []
-    compatible: []
-    recommended: 
+    all:
+    - 0.2.7-preview
+    - 0.3.0-preview
+    - 0.3.1-preview
+    - 0.3.2-preview
+    - 0.4.0-preview
+    - 0.5.0-preview
+    - 0.6.0-preview
+    - 0.6.1-preview
+    - 0.6.2-preview
+    - 0.6.3-preview
+    - 0.7.0-preview
+    - 0.7.1-preview
+    - 0.8.0-preview
+    - 1.0.0
+    - 1.0.1
+    - 1.0.2
+    - 1.0.3
+    - 1.0.4
+    - 1.1.0-preview
+    - 1.1.1-preview
+    - 1.1.2-preview
+    - 1.2.0-preview
+    - 1.2.1-preview
+    - 1.3.0-preview
+    - 1.3.1-preview
+    - 1.3.2-preview
+    - 1.3.3-preview
+    - 1.4.0-preview
+    - 2.0.0-pre.2
+    - 2.0.0-pre.3
+    - 2.0.0-pre.4
+    - 2.0.0-pre.5
+    - 2.0.0-pre.6
+    - 2.0.0
+    - 2.1.0-preview
+    - 2.2.0-preview
+    - 2.2.1-preview
+    - 2.3.0-preview
+    - 2.3.1-preview
+    - 2.4.0-preview
+    - 3.0.0
+    compatible:
+    - 3.0.0
+    recommended: 3.0.0
     deprecated: []
   dependencies:
-  - name: com.unity.nuget.mono-cecil
-    version: 1.10.1
+  - name: com.unity.burst
+    version: 1.6.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.modules.imageconversion
+    version: 1.0.0
   resolvedDependencies:
-  - name: com.unity.nuget.mono-cecil
-    version: 1.11.4
-  keywords:
-  - DI
-  - Dependency Injection
-  - DI Container
+  - name: com.unity.burst
+    version: 1.8.4
+  - name: com.unity.mathematics
+    version: 1.2.6
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.modules.imageconversion
+    version: 1.0.0
+  keywords: []
   registry:
     id: main
     name: 
@@ -134,18 +184,18 @@ m_ResolvedPackages:
     configSource: 0
   hideInEditor: 1
   entitlements:
-    licensingModel: 0
+    licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 0
-  documentationUrl: https://vcontainer.hadashikick.jp/
-  hasRepository: 0
+  datePublishedTicks: 637817245160000000
+  documentationUrl: 
+  hasRepository: 1
   repository:
-    type: 
-    url: 
-    revision: 
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/UnityInferenceEngine.git
+    revision: 26d48d6d408d03dc87eab5c945a97d2e155877d2
     path: 
   unityLifecycle:
-    version: 
+    version: 3.0.0
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
@@ -153,8 +203,8 @@ m_ResolvedPackages:
   isDeprecated: 0
   deprecationMessage: 
   git:
-    hash: af7bd4ecabaf6ea3f9e58ecc4352dd5296e5ef29
-    revision: 1.13.2
+    hash: 
+    revision: 
   upmReserved: 
   assetStore:
     productId: 
@@ -1837,6 +1887,74 @@ m_ResolvedPackages:
   git:
     hash: 
     revision: 
+  upmReserved: 
+  assetStore:
+    productId: 
+- packageId: jp.hadashikick.vcontainer@https://github.com/hadashiA/VContainer.git?path=VContainer/Assets/VContainer#1.13.2
+  testable: 0
+  isDirectDependency: 1
+  version: 1.13.2
+  source: 5
+  resolvedPath: /Users/jozenyuto/Desktop/Unity_/Unity_Template/Github/JozenSample/My
+    project1/Library/PackageCache/jp.hadashikick.vcontainer@af7bd4ecab
+  assetPath: Packages/jp.hadashikick.vcontainer
+  name: jp.hadashikick.vcontainer
+  displayName: VContainer
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: 
+  description: The extra fast DI (Dependency Injection) for Unity
+  status: 0
+  errors: []
+  versions:
+    all: []
+    compatible: []
+    recommended: 
+    deprecated: []
+  dependencies:
+  - name: com.unity.nuget.mono-cecil
+    version: 1.10.1
+  resolvedDependencies:
+  - name: com.unity.nuget.mono-cecil
+    version: 1.11.4
+  keywords:
+  - DI
+  - Dependency Injection
+  - DI Container
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 0
+  isAssetStorePackage: 0
+  datePublishedTicks: 0
+  documentationUrl: https://vcontainer.hadashikick.jp/
+  hasRepository: 0
+  repository:
+    type: 
+    url: 
+    revision: 
+    path: 
+  unityLifecycle:
+    version: 
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: af7bd4ecabaf6ea3f9e58ecc4352dd5296e5ef29
+    revision: 1.13.2
   upmReserved: 
   assetStore:
     productId: 
@@ -4028,6 +4146,83 @@ m_ResolvedPackages:
   upmReserved: 
   assetStore:
     productId: 
+- packageId: com.unity.nuget.mono-cecil@1.11.4
+  testable: 0
+  isDirectDependency: 0
+  version: 1.11.4
+  source: 1
+  resolvedPath: /Users/jozenyuto/Desktop/Unity_/Unity_Template/Github/JozenSample/My
+    project1/Library/PackageCache/com.unity.nuget.mono-cecil@1.11.4
+  assetPath: Packages/com.unity.nuget.mono-cecil
+  name: com.unity.nuget.mono-cecil
+  displayName: Mono Cecil
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: library
+  description: 'The mono cecil library from https://www.nuget.org/packages/Mono.Cecil/
+
+
+    This
+    package is intended for internal Unity use only. Most Unity users will be better
+    suite using the existing community tooling.
+
+    To avoid assembly clashes, please
+    use this package if you intend to use Mono.Cecil.'
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 0.1.6-preview.2
+    - 1.0.0-preview.1
+    - 1.10.0-preview.1
+    - 1.10.1-preview.1
+    - 1.10.1
+    - 1.10.2
+    - 1.11.4
+    compatible:
+    - 1.11.4
+    recommended: 1.11.4
+    deprecated: []
+  dependencies: []
+  resolvedDependencies: []
+  keywords: []
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 637852971930000000
+  documentationUrl: 
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/com.unity.nuget.mono-cecil.git
+    revision: d0133ce672d724694b56bfd20672acf6f8737fec
+    path: 
+  unityLifecycle:
+    version: 1.11.4
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: 
+  assetStore:
+    productId: 
 - packageId: com.unity.shadergraph@15.0.6
   testable: 0
   isDirectDependency: 0
@@ -4786,83 +4981,6 @@ m_ResolvedPackages:
     support\n\n### Removed\n\n### Changed\n- Changed Burst Inspector input handling
     so that arrow-keys can be used to select in search boxes.\n- Made Burst Inspector''s
     target job load asynchronous.\n\n### Known Issues"}'
-  assetStore:
-    productId: 
-- packageId: com.unity.nuget.mono-cecil@1.11.4
-  testable: 0
-  isDirectDependency: 0
-  version: 1.11.4
-  source: 1
-  resolvedPath: /Users/jozenyuto/Desktop/Unity_/Unity_Template/Github/JozenSample/My
-    project1/Library/PackageCache/com.unity.nuget.mono-cecil@1.11.4
-  assetPath: Packages/com.unity.nuget.mono-cecil
-  name: com.unity.nuget.mono-cecil
-  displayName: Mono Cecil
-  author:
-    name: 
-    email: 
-    url: 
-  category: 
-  type: library
-  description: 'The mono cecil library from https://www.nuget.org/packages/Mono.Cecil/
-
-
-    This
-    package is intended for internal Unity use only. Most Unity users will be better
-    suite using the existing community tooling.
-
-    To avoid assembly clashes, please
-    use this package if you intend to use Mono.Cecil.'
-  status: 0
-  errors: []
-  versions:
-    all:
-    - 0.1.6-preview.2
-    - 1.0.0-preview.1
-    - 1.10.0-preview.1
-    - 1.10.1-preview.1
-    - 1.10.1
-    - 1.10.2
-    - 1.11.4
-    compatible:
-    - 1.11.4
-    recommended: 1.11.4
-    deprecated: []
-  dependencies: []
-  resolvedDependencies: []
-  keywords: []
-  registry:
-    id: main
-    name: 
-    url: https://packages.unity.com
-    scopes: []
-    isDefault: 1
-    capabilities: 7
-    configSource: 0
-  hideInEditor: 1
-  entitlements:
-    licensingModel: 1
-  isAssetStorePackage: 0
-  datePublishedTicks: 637852971930000000
-  documentationUrl: 
-  hasRepository: 1
-  repository:
-    type: git
-    url: https://github.cds.internal.unity3d.com/unity/com.unity.nuget.mono-cecil.git
-    revision: d0133ce672d724694b56bfd20672acf6f8737fec
-    path: 
-  unityLifecycle:
-    version: 1.11.4
-    nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
   assetStore:
     productId: 
 - packageId: com.unity.searcher@4.9.2

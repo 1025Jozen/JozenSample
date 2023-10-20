@@ -7,6 +7,17 @@
       "dependencies": {},
       "hash": "64f7eec4e9e451b07ba0c56a152efaca88b6be17"
     },
+    "com.unity.barracuda": {
+      "version": "3.0.0",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.burst": "1.6.0",
+        "com.unity.modules.jsonserialize": "1.0.0",
+        "com.unity.modules.imageconversion": "1.0.0"
+      },
+      "url": "https://packages.unity.com"
+    },
     "com.unity.burst": {
       "version": "1.8.4",
       "depth": 1,

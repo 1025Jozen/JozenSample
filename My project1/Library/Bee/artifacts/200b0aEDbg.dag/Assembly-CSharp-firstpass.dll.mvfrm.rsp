@@ -1,3 +1,9 @@
+Library/Bee/artifacts/mvdfrm/Unity.Barracuda.BurstBLAS.ref.dll_C9D4E959AF9A27D2.mvfrm
+Library/Bee/artifacts/mvdfrm/Unity.Barracuda.Editor.ref.dll_E0904C3C9CE1A1FD.mvfrm
+Library/Bee/artifacts/mvdfrm/Unity.Barracuda.MacBLAS.ref.dll_1556F94DAEB7FF11.mvfrm
+Library/Bee/artifacts/mvdfrm/Unity.Barracuda.ONNX.ref.dll_B6251E07326B3979.mvfrm
+Library/Bee/artifacts/mvdfrm/Unity.Barracuda.ref.dll_EA99CE37DC7430F4.mvfrm
+Library/Bee/artifacts/mvdfrm/Unity.Barracuda.iOSBLAS.ref.dll_5EE3272E00657F0F.mvfrm
 Library/Bee/artifacts/mvdfrm/Unity.Burst.Editor.ref.dll_55441519181ED3BE.mvfrm
 Library/Bee/artifacts/mvdfrm/Unity.Burst.ref.dll_1A4A396316C69723.mvfrm
 Library/Bee/artifacts/mvdfrm/Unity.InputSystem.ForUI.ref.dll_59EB0A97FE8BA06B.mvfrm
@@ -36,6 +42,8 @@ Library/Bee/artifacts/mvdfrm/UnityEditor.UI.ref.dll_C36BD85A8E0AE6AA.mvfrm
 Library/Bee/artifacts/mvdfrm/UnityEngine.UI.ref.dll_7FD1AEB5942D0F15.mvfrm
 Library/Bee/artifacts/mvdfrm/Unity.Android.Gradle.dll_25A325D03243A1F0.mvfrm
 Library/Bee/artifacts/mvdfrm/Unity.Android.Types.dll_EA423CBDC094814C.mvfrm
+Library/Bee/artifacts/mvdfrm/UnityEditor.iOS.Extensions.Common.dll_970D5C6764796E8D.mvfrm
+Library/Bee/artifacts/mvdfrm/UnityEditor.iOS.Extensions.Xcode.dll_D5BBE0178FFBB30F.mvfrm
 Library/Bee/artifacts/mvdfrm/UnityEditor.CoreModule.dll_EFDC30AB44B1D650.mvfrm
 Library/Bee/artifacts/mvdfrm/UnityEditor.DeviceSimulatorModule.dll_3AAE4BAE8A4D7871.mvfrm
 Library/Bee/artifacts/mvdfrm/UnityEditor.DiagnosticsModule.dll_D01BA6808C44A67F.mvfrm
