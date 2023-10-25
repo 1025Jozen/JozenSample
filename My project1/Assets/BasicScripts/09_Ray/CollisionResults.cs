@@ -1,4 +1,4 @@
-namespace Ray
+namespace Ray_Sample
 {
     public struct CollisionResults
     {

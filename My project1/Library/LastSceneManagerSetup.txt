@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/BasicScripts/Etc/Onnx/Onnx_MNIST.unity
+- path: Assets/BasicScripts/15_Shader/Shader_CG/Shader.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

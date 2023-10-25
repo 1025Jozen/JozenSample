@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Ray
+namespace Ray_Sample
 {
     public class ColliderCheck : MonoBehaviour
     {

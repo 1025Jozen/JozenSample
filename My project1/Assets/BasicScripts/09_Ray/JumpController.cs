@@ -1,6 +1,7 @@
 using UnityEngine;
 
-namespace Ray {
+namespace Ray_Sample
+{
 
     public class JumpController : MonoBehaviour
     {
