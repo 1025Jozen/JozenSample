@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/BasicScripts/15_Shader/Shader_CG/Shader.unity
+- path: Assets/_Sample/22_Spline_Dolly/Spline.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
