@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/_Sample/22_Spline_Dolly/Spline.unity
+- path: Assets/_BasicProgram/1/BrickBreaker.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

@@ -11,5 +11,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Sample/11_State_Command_Singleton/Singleton/Singleton2.unity
     guid: b7edc9f15843048b191163fa1c7518d5
+  - enabled: 1
+    path: Assets/_BasicProgram/1/BrickBreaker.unity
+    guid: 22453f668ae724fd2b82f8e864688e42
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
