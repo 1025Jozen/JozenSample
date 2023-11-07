@@ -61,7 +61,7 @@ namespace Often {
                 //上を１行で書いただけ
                 OnFire?.Invoke(this,EventArgs.Empty);
             } else if (context.canceled) {
-                //Debug.Log("ボタンを離した");
+                Debug.Log("ボタンを離した");
             }
 
            
