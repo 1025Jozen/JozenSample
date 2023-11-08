@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-namespace Move {
+namespace NavMesh_Move {
     public class MoveChara : MonoBehaviour
     {
         [SerializeField] float speed = 1;

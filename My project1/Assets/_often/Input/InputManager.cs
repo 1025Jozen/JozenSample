@@ -17,6 +17,7 @@ namespace Often {
             if (Instance == null) {
                 Instance = this;              
                 inputSys = new InputSys();
+                DontDestroyOnLoad(gameObject);
             } else {
                 Destroy(gameObject);
             }

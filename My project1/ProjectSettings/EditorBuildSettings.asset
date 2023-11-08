@@ -14,5 +14,14 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_BasicProgram/1/BrickBreaker.unity
     guid: 22453f668ae724fd2b82f8e864688e42
+  - enabled: 1
+    path: Assets/_Sample/25_Scene/Scene_Sample1.unity
+    guid: 281185de2a3934e4485dbcc64afd7221
+  - enabled: 1
+    path: Assets/_Sample/25_Scene/Scene_Sample2.unity
+    guid: 70caec9a78eef4d67a12407a48aa0f34
+  - enabled: 1
+    path: Assets/_Sample/25_Scene/ManagerScene.unity
+    guid: ddeaba7b7bcf74074beb4c34108065b5
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

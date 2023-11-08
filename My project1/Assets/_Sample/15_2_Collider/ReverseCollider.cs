@@ -6,7 +6,6 @@ namespace col_sample
 {
     public class ReverseCollider : MonoBehaviour
     {
-
         public bool removeExistingColliders = true;
 
         private void Start() {

@@ -1,4 +1,11 @@
-﻿Examples →  Scenes説明
+﻿NavMeshComponents
+https://github.com/Unity-Technologies/NavMeshComponents
+から
+NavMeshComponentsフォルダを自身のプロジェクトのAssetsフォルダ配下にコピーで使えるようになる
+
+
+
+Examples →  Scenes説明
 
 
 1_multiple_agent_sizes
