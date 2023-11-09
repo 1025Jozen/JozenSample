@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/_Sample/21_NavMesh/NavMesh2/NavMesh2.unity
+- path: Assets/_Sample/Etc/onnx/onnx.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
