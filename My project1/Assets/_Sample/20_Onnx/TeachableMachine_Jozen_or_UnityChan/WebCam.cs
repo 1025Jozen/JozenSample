@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 // Webカメラ
 public class WebCam : MonoBehaviour
@@ -11,7 +12,7 @@ public class WebCam : MonoBehaviour
 
     // 推論
     public Classifier classifier;   // 分類
-    public Text uiText;             // テキスト
+    public TextMeshProUGUI uiText;             // テキスト
     private bool isWorking = false; // 処理中
     WebCamDevice[] devices;         // PCにつないでいるウェブカメラデバイスのリスト
     private string webCamName;

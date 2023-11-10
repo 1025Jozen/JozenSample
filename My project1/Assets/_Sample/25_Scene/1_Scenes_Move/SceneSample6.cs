@@ -8,11 +8,12 @@ namespace SceneSample {
     {
         private static bool Loaded { get; set; }
 
+        //何らかのManeger(管理)に関するシーン
         void Awake() {
             if (Loaded) return;
 
             Loaded = true;
-            SceneManager.LoadScene("ManagerScene", LoadSceneMode.Additive);
+            SceneManager.LoadScene("Scene_Sample3_Manager", LoadSceneMode.Additive);
         }
     }
 }

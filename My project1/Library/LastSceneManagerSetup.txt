@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/_Sample/Etc/onnx/onnx.unity
+- path: Assets/_Sample/25_Scene/1_Scenes_Move/Scene_Sample1.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

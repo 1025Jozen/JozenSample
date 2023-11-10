@@ -15,7 +15,7 @@ namespace SceneSample {
         public void OnAccessGameManager() {
             //ロード済みのシーンであれば、名前で別シーンを取得できる
             //***DontDestroyOnLoadにはアクセスできない
-            Scene scene = SceneManager.GetSceneByName("ManagerScene");
+            Scene scene = SceneManager.GetSceneByName("Scene_Sample3_Manager");
 
             //GetRootGameObjectsで、そのシーンのルートGameObjects
             //つまり、ヒエラルキーの最上位のオブジェクトが取得できる
