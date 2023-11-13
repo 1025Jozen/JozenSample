@@ -299,8 +299,8 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Point",
-                    "type": "PassThrough",
+                    "name": "Pointer",
+                    "type": "Value",
                     "id": "33eb95ee-bc28-4e08-89a1-648df79f8700",
                     "expectedControlType": "Vector2",
                     "processors": "",
@@ -656,7 +656,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard&Mouse",
-                    "action": "Point",
+                    "action": "Pointer",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -667,7 +667,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard&Mouse",
-                    "action": "Point",
+                    "action": "Pointer",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -678,7 +678,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Touch",
-                    "action": "Point",
+                    "action": "Pointer",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },

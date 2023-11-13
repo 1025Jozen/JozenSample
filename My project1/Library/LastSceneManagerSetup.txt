@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/_Sample/25_Scene/1_Scenes_Move/Scene_Sample1.unity
+- path: Assets/_Sample/20_Onnx/TeachableMachine_Jozen_or_UnityChan/onnx.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

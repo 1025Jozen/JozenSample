@@ -52,8 +52,8 @@ namespace MNIST
 
         //レイから画面での座標を
         private void Draw(RaycastResult target) {
-            var corners = new Vector3[4];
-            image.rectTransform.GetWorldCorners(corners);//UI要素の四隅の座標をrawimageにセットする
+            var corners = new Vector3[4];//(UI要素rawimageの座標４隅のための配列)
+            image.rectTransform.GetWorldCorners(corners);//UI要素の四隅の座標の配列をrawimageにセットする
             corners[0] = RectTransformUtility.WorldToScreenPoint(Camera.main, corners[0]);//ワールド座標をスクリーン座標に変換
             corners[2] = RectTransformUtility.WorldToScreenPoint(Camera.main, corners[2]);
 
@@ -66,7 +66,7 @@ namespace MNIST
             //_texture.SetPixel(x, y, Color.white);
             for (var i = -1; i <= 1; i++) {
                 for (var j = -1; j <= 1; j++) {
-                    if (x + i < 0 || x + i >= TexturePixelSize || y + j < 0 || y + j >= TexturePixelSize) continue;
+                    if (x + i < 0 || x + i >= TexturePixelSize || y + j < 0 || y + j >= TexturePixelSize) continue;//範囲外なら　forの先頭に戻る
                     _texture.SetPixel(x + i, y + j, Color.white);//テクスチャの該当ピクセルを白い色に
                 }
             }
