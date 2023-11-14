@@ -358,10 +358,10 @@
 -r:"Library/Bee/artifacts/200b0aEDbg.dag/UnityEngine.UI.ref.dll"
 -analyzer:"/Users/jozenyuto/Doc/Program/GameApp/Unity/2023.1.1f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"/Users/jozenyuto/Doc/Program/GameApp/Unity/2023.1.1f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
-"Assets/_Sample/21_NavMesh/NavMesh4/NavMeshComponents/Scripts/NavMeshLink.cs"
-"Assets/_Sample/21_NavMesh/NavMesh4/NavMeshComponents/Scripts/NavMeshModifier.cs"
-"Assets/_Sample/21_NavMesh/NavMesh4/NavMeshComponents/Scripts/NavMeshModifierVolume.cs"
-"Assets/_Sample/21_NavMesh/NavMesh4/NavMeshComponents/Scripts/NavMeshSurface.cs"
+"Assets/_Sample_BasicProgram/21_NavMesh/NavMeshComponents/NavMeshComponents/Scripts/NavMeshLink.cs"
+"Assets/_Sample_BasicProgram/21_NavMesh/NavMeshComponents/NavMeshComponents/Scripts/NavMeshModifier.cs"
+"Assets/_Sample_BasicProgram/21_NavMesh/NavMeshComponents/NavMeshComponents/Scripts/NavMeshModifierVolume.cs"
+"Assets/_Sample_BasicProgram/21_NavMesh/NavMeshComponents/NavMeshComponents/Scripts/NavMeshSurface.cs"
 -langversion:9.0
 
 /deterministic

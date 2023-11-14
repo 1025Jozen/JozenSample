@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/_Sample/20_Onnx/TeachableMachine_Jozen_or_UnityChan/onnx.unity
+- path: Assets/_Sample_BasicProgram/13_JSON_ScriptableObject_Watermelon/JSON/JsonScene_(W_Write_R_Read).unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
