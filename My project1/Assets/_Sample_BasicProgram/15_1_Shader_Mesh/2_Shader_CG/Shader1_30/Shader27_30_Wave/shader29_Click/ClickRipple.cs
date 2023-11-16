@@ -1,5 +1,13 @@
 using UnityEngine;
 
+//CustomRenderTextureに実装されているUpdateZoneを利用することで
+//任意の箇所のみ指定したPassでシミュレートするという魔法が使えるそうです。
+
+//ただし、指定した箇所以外のシミュレートが停止するとのことなので、
+//全体のシミュレート(_defaultZoneの箇所)も同時に行っています。
+
+
+
 namespace Shader_Sample {
     /// <summary>
     /// クリックした箇所に波紋を発生させる

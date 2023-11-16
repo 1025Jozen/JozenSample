@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/_Sample_BasicProgram/13_JSON_ScriptableObject_Watermelon/JSON/JsonScene_(W_Write_R_Read).unity
+- path: Assets/_Sample_BasicProgram/Etc/10_Roll_Cube/Roll_Cube.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

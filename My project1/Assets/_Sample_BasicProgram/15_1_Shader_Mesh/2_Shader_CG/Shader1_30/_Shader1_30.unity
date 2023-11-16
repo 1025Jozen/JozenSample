@@ -345,12 +345,12 @@ GameObject:
   - component: {fileID: 107830197}
   - component: {fileID: 107830196}
   m_Layer: 0
-  m_Name: Shader28_shader28_Hull_Tessellation
+  m_Name: Shader28_Hull_Tessellation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &107830195
 Transform:
   m_ObjectHideFlags: 0
@@ -1287,7 +1287,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &402180574
 Transform:
   m_ObjectHideFlags: 0
@@ -3931,7 +3931,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1791489727
 Transform:
   m_ObjectHideFlags: 0
@@ -4078,7 +4078,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1817503951
 Transform:
   m_ObjectHideFlags: 0

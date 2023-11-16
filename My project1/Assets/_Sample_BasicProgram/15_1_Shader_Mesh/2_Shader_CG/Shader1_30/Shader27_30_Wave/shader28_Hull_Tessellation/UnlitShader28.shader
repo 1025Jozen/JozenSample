@@ -24,7 +24,10 @@ Shader "Unlit/UnlitShader28"
         {
             //頂点シェーダー、フラグメントシェーダーに加えてハルシェーダー
 
-            //頂点→ハル→テッセレーション→Domain→geometry→Fragment  の順で計算される
+
+
+            //頂点  →  ハル  →  テッセレーション  →  Domain  →  geometry  →   Fragment  の順で計算される
+
 
             //1 頂点シェーダー (Vertex Shader) 
             //3Dモデルの頂点座標や法線などの情報を計算します。
@@ -32,23 +35,33 @@ Shader "Unlit/UnlitShader28"
             //このステージで計算された頂点情報は、3Dオブジェクトを2D画面上に投影するのに使用されます。
 
             //2 ハルシェーダー (Hull Shader): 
-            //テッセレーションと呼ばれるプロセスの一部として使用されます。テッセレーションは、3Dモデルを細かい三角形に分割し、詳細な表面を生成するプロセスです。ハルシェーダーは、テッセレーション制御やテッセレーション因子を計算するのに使用されます。
+            //テッセレーションと呼ばれるプロセスの一部として使用されます。
+            //テッセレーションは、3Dモデルを細かい三角形に分割し、詳細な表面を生成するプロセスです。
+            //ハルシェーダーは、テッセレーション制御やテッセレーション因子を計算するのに使用されます。
             
             //3 テッセレーションシェーダー (Tessellation Shader): 
-            //テッセレーションは、細分割された三角形の詳細な表面を生成します。テッセレーションシェーダーは、細分割された三角形の新しい頂点を生成し、新しいポリゴンのトポロジを形成します。
+            //テッセレーションは、細分割された三角形の詳細な表面を生成します。
+            //テッセレーションシェーダーは、細分割された三角形の新しい頂点を生成し、新しいポリゴンのトポロジを形成します。
             
-            //4 ドメインシェーダー (Domain Shader): テッセレーションによって生成された新しいポリゴンの頂点情報を計算します。このステージで、ポリゴンの頂点座標をローカルスペースからワールドスペースまたはビュースペースに変換できます。
+            //4 ドメインシェーダー (Domain Shader):
+            //テッセレーションによって生成された新しいポリゴンの頂点情報を計算します。
+            //このステージで、ポリゴンの頂点座標をローカルスペースからワールドスペースまたはビュースペースに変換できます。
 
-            //5 ジオメトリシェーダー (Geometry Shader): ジオメトリシェーダーは、一連のポリゴンの処理に使用されます。これにより、新しいポリゴンを生成または既存のポリゴンを変更できます。例えば、ジオメトリシェーダーを使用して、テッセレーションされたポリゴンを草のような形状に変更することができます。
+            //5 ジオメトリシェーダー (Geometry Shader):
+            //ジオメトリシェーダーは、一連のポリゴンの処理に使用されます。
+            //これにより、新しいポリゴンを生成または既存のポリゴンを変更できます。
+            //例えば、ジオメトリシェーダーを使用して、テッセレーションされたポリゴンを草のような形状に変更することができます。
 
-            //6 フラグメントシェーダー (Fragment Shader): フラグメントシェーダーはピクセルごとの色情報を計算し、最終的なピクセルの色を生成します。光の影響、テクスチャのサンプリング、シャドウの計算など、3Dオブジェクトの各ピクセルに対する詳細な計算が行われます。
+            //6 フラグメントシェーダー (Fragment Shader):
+            //フラグメントシェーダーはピクセルごとの色情報を計算し、最終的なピクセルの色を生成します。
+            //光の影響、テクスチャのサンプリング、シャドウの計算など、3Dオブジェクトの各ピクセルに対する詳細な計算が行われます。
             
             
             CGPROGRAM
-            #pragma vertex vert   //vertが頂点シェーダーであることをGPUに伝える
-            #pragma fragment frag //fragがフラグメントシェーダーであることをGPUに伝える
-            #pragma hull hull     //hullがハルシェーダーであることをGPUに伝える
-            #pragma domain domain //domainがドメインシェーダーであることをGPUに伝える
+            #pragma vertex vert   //vert  が頂点シェーダー       であることをGPUに伝える
+            #pragma hull hull     //hull  がハルシェーダー       であることをGPUに伝える
+            #pragma domain domain //domainがドメインシェーダー    であることをGPUに伝える
+            #pragma fragment frag //frag  がフラグメントシェーダーであることをGPUに伝える
 
             #include "Tessellation.cginc"
             #include "UnityCG.cginc"
@@ -120,13 +133,14 @@ Shader "Unlit/UnlitShader28"
                 return o;
             }
 
-            //頂点→「ハル」→テッセレーション→Domain→geometry→Fragment 
-            //ハルシェーダー
+            //頂点  →「ハルシェーダー」  →  テッセレーション  →   Domain   →   geometry   →   Fragment
+            
+            //ハルシェーダー   どう分割するかを計算してくれます。
             //パッチに対してコントロールポイントを割り当てて出力する   // パッチ ：ポリゴン分割処理を行う際に使用するコントロールポイントの集合
             //コントロールポイントごとに1回実行                    // コントロールポイント：頂点分割で使う制御点
-            [domain("tri")]                  //分割に利用する形状を指定　"tri" "quad" "isoline"から選択
-            [partitioning("integer")]        //分割方法 "integer" "fractional_eve" "fractional_odd" "pow2"から選択
-            [outputtopology("triangle_cw")]  //出力された頂点が形成するトポロジー(形状)　"point" "line" "triangle_cw" "triangle_ccw" から選択
+            [domain("tri")]                  //分割に利用する形状を指定　              "tri"     "quad"           "isoline"                        から選択
+            [partitioning("integer")]        //分割方法                             "integer" "fractional_eve"  "fractional_odd" "pow2"         から選択
+            [outputtopology("triangle_cw")]  //出力された頂点が形成するトポロジー(形状)　"point"   "line"            "triangle_cw"    "triangle_ccw" から選択
             [patchconstantfunc("hullConst")] //Patch-Constant-Functionの指定
             [outputcontrolpoints(OUTPUT_PATCH_SIZE)] //出力されるコントロールポイントの集合の数
             HsControlPointOutput hull(InputPatch<HsInput, INPUT_PATCH_SIZE> i, uint id : SV_OutputControlPointID)
@@ -160,7 +174,7 @@ Shader "Unlit/UnlitShader28"
             }
 
 
-            // 頂点→ハル→テッセレーション→「Domain」→geometry→Fragment 
+            // 頂点  →   ハル  →   テッセレーション  →  「Domain」  →   geometry   →    Fragment 
             //ドメインシェーダー　　 //テッセレーター(めっちゃポリゴンを分割した)から出てきた分割位置で頂点を計算し出力するのが仕事
             [domain("tri")]      //分割に利用する形状を指定　"tri" "quad" "isoline"から選択
             DsOutput domain(
