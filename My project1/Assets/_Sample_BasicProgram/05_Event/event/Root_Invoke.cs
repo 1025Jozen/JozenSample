@@ -37,7 +37,7 @@ namespace EventSample {
         void Update() {
             if (Input.GetKeyDown(attackKey)) {
 
-                //敵のHPを減らす
+                //敵のHPを減らす  player_Attack
 
                 OnAttack?.Invoke(this, new AttackParam { power = 1 });//イベント実行 //攻撃イベントを呼び出す
             }

@@ -1,10 +1,10 @@
 using UnityEngine;
 
 //CustomRenderTextureに実装されているUpdateZoneを利用することで
-//任意の箇所のみ指定したPassでシミュレートするという魔法が使えるそうです。
+//任意の箇所のみ指定したPassでシミュレートする
 
-//ただし、指定した箇所以外のシミュレートが停止するとのことなので、
-//全体のシミュレート(_defaultZoneの箇所)も同時に行っています。
+//ただし、指定した箇所以外のシミュレートが停止するので、
+//全体のシミュレート(_defaultZone)も同時に行っています。
 
 
 
@@ -35,12 +35,10 @@ namespace Shader_Sample {
             };
         }
 
-        private void Update() {
-            //クリック時のUpdateZoneがクリック後も適応された状態にならないように一度消去する
-            _customRenderTexture.ClearUpdateZones();
+        private void Update() {         
+            _customRenderTexture.ClearUpdateZones();//クリック時のUpdateZoneがクリック後も適応された状態にならないように一度消去する
             UpdateZonesClickArea();
-            //更新したいフレーム数を指定して更新
-            _customRenderTexture.Update(iterationPerFrame);
+            _customRenderTexture.Update(iterationPerFrame);//更新したいフレーム数を指定して更新
         }
 
         /// <summary>

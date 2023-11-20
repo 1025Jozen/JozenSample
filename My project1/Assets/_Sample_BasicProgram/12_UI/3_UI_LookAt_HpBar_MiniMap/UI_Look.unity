@@ -990,7 +990,7 @@ GameObject:
   - component: {fileID: 1847324685}
   - component: {fileID: 1847324684}
   - component: {fileID: 1847324683}
-  m_Layer: 8
+  m_Layer: 14
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1095,7 +1095,7 @@ GameObject:
   - component: {fileID: 1902469150}
   - component: {fileID: 1902469148}
   m_Layer: 0
-  m_Name: Camera
+  m_Name: minimap_Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1184,7 +1184,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 16640
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: 9fcbe8b259de3443cba3efb6d1e95767, type: 2}
   m_TargetDisplay: 0

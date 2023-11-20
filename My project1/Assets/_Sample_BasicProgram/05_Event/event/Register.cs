@@ -8,7 +8,7 @@ namespace EventSample {
     {
         [SerializeField] float enemy_hp = 10;
         [SerializeField] float player_hp = 10;
-        [SerializeField] float attack = 5;
+        [SerializeField] float enemy_attack = 5;
 
         private void Start()
         {
@@ -19,16 +19,16 @@ namespace EventSample {
         }
 
         private void Damage(object sender, EventArgs e) {
-            player_hp -= attack;
+            player_hp -= enemy_attack;
 
-            Debug.Log(player_hp);
+            Debug.Log($"Player_Hp : {player_hp}");
         }
 
         private void Attack(object sender, Root_Invoke.AttackParam e)
         {
             enemy_hp -= e.power;
 
-            Debug.Log(enemy_hp);
+            Debug.Log($"Enemy_Hp : {enemy_hp}");
         }
 
     }

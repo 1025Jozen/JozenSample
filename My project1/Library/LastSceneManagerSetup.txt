@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/_Sample_BasicProgram/Etc/10_Roll_Cube/Roll_Cube.unity
+- path: Assets/_Sample_BasicProgram/15_1_Shader_Mesh/2_Shader_CG/Shader1_30/_Shader1_30.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

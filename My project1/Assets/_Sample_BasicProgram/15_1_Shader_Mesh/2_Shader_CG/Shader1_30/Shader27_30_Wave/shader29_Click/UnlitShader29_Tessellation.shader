@@ -23,10 +23,10 @@ Shader "Unlit/UnlitShader29_Tessellation"
         Pass
         {
             CGPROGRAM
-            #pragma vertex vert //vertが頂点シェーダーであることをGPUに伝える
-            #pragma fragment frag //fragがフラグメントシェーダーであることをGPUに伝える
-            #pragma hull hull //hullがハルシェーダーであることをGPUに伝える
+            #pragma vertex vert   //vertが頂点シェーダーであることをGPUに伝える
+            #pragma hull hull     //hullがハルシェーダーであることをGPUに伝える
             #pragma domain domain //domainがドメインシェーダーであることをGPUに伝える
+            #pragma fragment frag //fragがフラグメントシェーダーであることをGPUに伝える
 
             #include "Tessellation.cginc"
             #include "UnityCG.cginc"
@@ -55,7 +55,7 @@ Shader "Unlit/UnlitShader29_Tessellation"
             struct HsInput
             {
                 float4 position : POS;
-                float3 normal : NORMAL;
+                float3 normal   : NORMAL;
                 float2 texCoord : TEXCOORD;
             };
 
