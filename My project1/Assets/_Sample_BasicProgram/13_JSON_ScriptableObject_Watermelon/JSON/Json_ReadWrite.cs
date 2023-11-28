@@ -1,13 +1,13 @@
 //#define cryptography
 
-using System;
+//using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using UnityEngine;
 using System.Collections;
-using Cysharp.Threading.Tasks;
-using System.Threading;
+//using Cysharp.Threading.Tasks;
+//using System.Threading;
 
 using TMPro;
 
@@ -74,6 +74,7 @@ namespace JSON
             //}
         }
 
+        //１文字ずつ表示
         IEnumerator DisplayTextOneByOne() {
             isTyping = true;
             textItemName.text = "";
@@ -83,17 +84,17 @@ namespace JSON
             }
         }
 
-        async UniTask TypeText() {
-            Debug.Log("Task is already running.");            
-            textItemName.text = "";
-            foreach (char c in playerData.name) {
-                textItemName.text += c;
-                await UniTask.DelayFrame(1);
-                await UniTask.Delay(System.TimeSpan.FromSeconds(displaySpeed));
-            }
-            isTyping = false;
-            return;
-        }
+        //async UniTask TypeText() {
+        //    Debug.Log("Task is already running.");            
+        //    textItemName.text = "";
+        //    foreach (char c in playerData.name) {
+        //        textItemName.text += c;
+        //        await UniTask.DelayFrame(1);
+        //        await UniTask.Delay(System.TimeSpan.FromSeconds(displaySpeed));
+        //    }
+        //    isTyping = false;
+        //    return;
+        //}
 
 
 

@@ -49,3 +49,15 @@ namespace KnockBack
         }
     }
 }
+
+//ControllerColliderHit　変数例
+//collider      コントローラーにヒットしたコライダー
+//controller	ヒットしたコライダーのコントローラー
+//gameObject	コントローラーにヒットしたゲームオブジェクト
+//moveDirection	衝突が起こったとき CharacterController が動く方向
+//moveLength	コライダーにヒットするまでに、キャラクターがどのくらいの距離を移動したか。
+//normal	    ワールド空間で衝突した表面の法線
+//point	        ワールド空間における衝突点
+//rigidbody	    コントローラーがヒットしたリジッドボディ
+//transform	    コントローラーがヒットしたトランスフォームこれらの情報はCollisionオブジェクトを介して取得でき、
+//              衝突時の詳細な情報を扱うのに役立ちます。

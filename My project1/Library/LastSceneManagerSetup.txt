@@ -1,5 +1,6 @@
 sceneSetups:
-- path: Assets/_Sample_BasicProgram/15_1_Shader_Mesh/2_Shader_CG/Shader1_30/_Shader1_30.unity
+- path: Assets/_Sample_BasicProgram/Etc/Test_Shader/Snowtracks Shader/Snowtracks
+    Shader.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

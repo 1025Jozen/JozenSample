@@ -41,25 +41,29 @@ namespace Shader_Sample {
             _customRenderTexture.Update(iterationPerFrame);//更新したいフレーム数を指定して更新
         }
 
-        /// <summary>
-        /// クリックした箇所を起点に特定の領域のみ指定したパスでシミュレートさせる
-        /// </summary>
+        /// <summary> クリックした箇所を起点に特定の領域のみ指定したパスでシミュレートさせる </summary>
         private void UpdateZonesClickArea() {
             bool leftClick = Input.GetMouseButton(0);
             if (!leftClick) return;
 
             var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+
             if (Physics.Raycast(ray, out var hit)) {
                 //クリック時に使用するUpdateZone
                 //クリックした箇所を更新の原点とする
                 //使用するパスもクリック用に変更
+
+
                 var clickZone = new CustomRenderTextureUpdateZone {
-                    needSwap = true,
+                    needSwap  = true,
                     passIndex = 1,
-                    rotation = 0f,
+                    rotation  = 0f,
                     updateZoneCenter = new Vector2(hit.textureCoord.x, 1f - hit.textureCoord.y),
-                    updateZoneSize = new Vector2(_ripppleSize, _ripppleSize)
+                    updateZoneSize   = new Vector2(_ripppleSize, _ripppleSize)
                 };
+
+
 
                 _customRenderTexture.SetUpdateZones(new CustomRenderTextureUpdateZone[] { _defaultZone, clickZone });
             }

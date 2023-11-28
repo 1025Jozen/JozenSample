@@ -30,22 +30,28 @@ namespace Ragdoll_Sample {
             //ノックバックして
             anim.SetTrigger("Hit");
             attackTrigger = true;
-           
             yield return new WaitForSeconds(1f);
             //しばらくしたら倒れる
             TurnOnRagdoll();
         }
 
-        void Update() {
+        
 
+        void Update() {
             //アニメーションの進行状況でragdoll化させてやってもいいがragdollの紹介が目的なので割愛
 
-            //// アニメーションの現在の状態を取得
-            //AnimatorStateInfo stateInfo = anim.GetCurrentAnimatorStateInfo(0);
-            //// アニメーションの進行度を取得
-            //float progress = stateInfo.normalizedTime;
-            //// 進行度を表示
-            //Debug.Log("Animation Progress: " + progress);
+            // アニメーションの現在の状態を取得
+            AnimatorStateInfo stateInfo = anim.GetCurrentAnimatorStateInfo(0);//0はレイヤー
+            // アニメーションの進行度を取得
+            float progress = stateInfo.normalizedTime;//２周目以降があるならば1.0よりも大きな値になる。
+            // 進行度を表示
+            Debug.Log("Animation Progress: " + progress);
+            Debug.Log("Animation 経過時間: "  + progress * stateInfo.length);
+
+
+
+
+
 
 
             if (attackTrigger) {
