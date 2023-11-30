@@ -5,6 +5,7 @@ using UnityEngine;
 
 namespace Shader_Sample
 {
+    //マウスでなぞったところを凹ませる(絵を描く)
     public class DrawTracks : MonoBehaviour
     {
         [SerializeField] Camera _camera;

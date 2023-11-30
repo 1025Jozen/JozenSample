@@ -1,3 +1,19 @@
+//全体の流れ
+//Tessellation.shader
+//第1段階　テッセレーション　でポリゴン数を増やす
+//第2段階　既存の絵(テクスチャ)の色合い(R)を元に頂点を上下させる
+//第3段階　深さを元に２つのテクスチャや色合いを混ぜる(影であったり地面であってり)
+
+//DrawTracks.shader DrawTracks.cs
+//第4段階　マウスでクリックした位置にRayを飛ばし、そのRayを元にtempのテクスチャに絵を描き、そのテクスチャをTessellation.shaderで参照してもらう
+
+//ObjectTracks.cs
+//第5段階  マウスの代わりにObjectからRayを飛ばし、そのRayを元にtempのテクスチャに絵を描き、そのテクスチャをTessellation.shaderで参照してもらう
+
+//SnowFall.shader  SnowNoise.cs 
+//第6段階  時間経過によって凸凹を平にする、SnowNoise.csはプログラムからSnowFall.shaderやTessellation.shaderの変数を操作できるようにしただけのもの
+//        時間経過によって、参照してもらう絵の色合いを変える
+
 Shader "test/Tessellation"
 {
 
@@ -236,7 +252,7 @@ Shader "test/Tessellation"
                 //lerpの割合 を決める　深さ（テクスチャの色合いから深さを決めてる）で量を変える　
                 half amount =  tex2Dlod(_DispTex, float4(i.texCoord, 0, 0)).r ;
 
-                //lerpで色をゆっくり変える
+                //lerpで深さによって色をゆっくり変える
                 return lerp(  c_snow, c_ground , amount );
             }
             ENDCG

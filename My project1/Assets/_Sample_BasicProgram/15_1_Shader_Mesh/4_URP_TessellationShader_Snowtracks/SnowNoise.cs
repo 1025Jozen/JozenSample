@@ -5,7 +5,7 @@ namespace Shader_Sample
 {
     public class SnowNoise : MonoBehaviour
     {
-        [SerializeField] Shader _snowFallShader;
+        [SerializeField] Shader _snowFallShader;//時間が経つにつれて_Displacementを
         private Material _snowFallMat;
         private MeshRenderer _meshRenderer;
 
@@ -20,6 +20,7 @@ namespace Shader_Sample
         }
 
         void Update() {
+
             _snowFallMat.SetFloat("_FlakeAmount", _flakeAmount);
             _snowFallMat.SetFloat("_FlakeOpacity", _flakeOpacity);
             RenderTexture snow = (RenderTexture)_meshRenderer.material.GetTexture("_DispTex");
