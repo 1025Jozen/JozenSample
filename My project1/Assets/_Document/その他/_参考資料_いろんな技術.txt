@@ -1,3 +1,9 @@
+_Cascadeur
+
+
+
+
+
 Unityの無料アセット
 スタイリッシュなグラフを動的生成できる
 XCharts
@@ -38,3 +44,6 @@ https://trello.com/ja
 ParrelSync
 
 
+
+EffectTextureMaker　　ブラウザ上でエフェクト用のテクスチャ素材を生成できるサイト
+https://mebiusbox.github.io/contents/EffectTextureMaker/

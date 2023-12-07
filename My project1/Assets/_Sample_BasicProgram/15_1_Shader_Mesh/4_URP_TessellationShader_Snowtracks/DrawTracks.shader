@@ -57,14 +57,14 @@ Shader "test/DrawTracks"//絵を描く　//この絵を元に凸凹を考える
                 //押した位置を描く
                 //uv座標  と　押した位置の距離　を出す
                 //1 1    と　　　マウスを押した位置でのUV座標
-                //powで大きさ調整　なので大きいほど
+                //powで大きさ調整　
                 float draw = pow( saturate( 1 - distance(i.uv,_Coordinate.xy)), _Size);//　距離　　Saturateは0以下の値を0に、1以上の値を1   
                 fixed4 drawcol = _Color * ( draw * 500/_Strength);
                 return saturate(col + drawcol);
 
 
 
-                //テスト
+                //テスト   場所に色を塗る
                 //float radius = 0.5f;
                 //float dist = distance(i.uv, float2(_Coordinate.x, _Coordinate.y));// 描画位置との 距離
                 //float alpha = 1.0 - smoothstep(radius - 0.01, radius + 0.01, dist);//

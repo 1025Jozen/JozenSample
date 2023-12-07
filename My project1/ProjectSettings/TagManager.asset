@@ -23,9 +23,9 @@ TagManager:
   - 
   - Minimap
   - 
-  - 
-  - 
-  - 
+  - OutLine
+  - Dither
+  - StencilRead
   - 
   - 
   - 

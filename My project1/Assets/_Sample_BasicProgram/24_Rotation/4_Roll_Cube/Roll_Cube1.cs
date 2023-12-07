@@ -18,15 +18,11 @@ namespace Roll_Cube_Sample {
         Quaternion fromRotation;                // 回転前のCubeのクォータニオン
         Quaternion toRotation;                  // 回転後のCubeのクォータニオン
 
-        // Use this for initialization
         void Start() {
-
             // 重心の回転軌道半径を計算
             radius = sideLength * Mathf.Sqrt(2f) / 2f; //回転軸にするところから重心までの長さ   //45度の三角形の辺の割合 1:1:√2
-
         }
 
-        // Update is called once per frame
         void Update() {
 
             float x = 0;

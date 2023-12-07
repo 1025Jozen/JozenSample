@@ -13,7 +13,7 @@ namespace Shader_Sample
             RaycastHit hit;
 
             if (Physics.Raycast(ray, out hit)) {
-                Vector2 pixelUV = hit.textureCoord;
+                Vector2 pixelUV = hit.textureCoord;//オブジェクトのUV値を取得
                 Debug.Log("pixelUV:::" + pixelUV.x + " , " + pixelUV.y);
             }
         }
