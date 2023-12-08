@@ -16,7 +16,7 @@ public class Paintable : MonoBehaviour
     int maskTextureID = Shader.PropertyToID("_MaskTexture");//PaintableシェーダーのTextureID　(PaintableObjectにはPaintableマテリアルをつけてる)
 
     //どれもStartで新規生成
-    public RenderTexture getMask()      => maskRenderTexture;         //マスク
+    public RenderTexture getMask()      => maskRenderTexture;         //マスク 部分にペイントを施す
     public RenderTexture getUVIslands() => uvIslandsRenderTexture;    //uv アイランアイランド 　テクスチャ
     public RenderTexture getExtend()    => extendIslandsRenderTexture;//　  アイランド　
     public RenderTexture getSupport()   => supportTexture;            //サポート用テクスチャの用意

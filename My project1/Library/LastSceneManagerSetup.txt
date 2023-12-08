@@ -1,6 +1,5 @@
 sceneSetups:
-- path: Assets/_Sample_BasicProgram/15_1_Shader_Mesh/4_URP_TessellationShader_Snowtracks/_Snowtracks
-    Shader.unity
+- path: Assets/_Sample_BasicProgram/Etc/Test_Shaderetc/Mesh_Cut/Mesh_Cut.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

@@ -48,11 +48,12 @@
             //頂点
             v2f vert (appdata v){
                 v2f o;
-				o.worldPos = mul(unity_ObjectToWorld, v.vertex);
+				o.worldPos = mul(unity_ObjectToWorld, v.vertex);//ワールド空間の位置をuv空間に変換する　uvアイランドを再作成　UVに重複する三角形がないことを意味する
                 o.uv       = v.uv;
 				float4 uv  = float4(0, 0, 0, 1);
-                uv.xy      = float2(1, _ProjectionParams.x) * (v.uv.xy * float2( 2, 2 ) - float2(1, 1));
-				o.vertex   = uv; 
+                uv.xy      = float2(1, _ProjectionParams.x) * (v.uv.xy * float2( 2, 2 ) - float2(1, 1));//レンダリング投影行列　_ProjectionParams.x　＊  -1~1
+                //uv.xy      = (v.uv.xy * 2 - 1) * float2(1, _ProjectionParams.x) ;//_ProjectionParams x は 1.0 または –1.0、反転した射影行列で現在レンダリングしている場合は負の値。
+                o.vertex   = uv; 
                 return o;
             }
 
@@ -65,7 +66,7 @@
                 float4 col = tex2D(_MainTex, i.uv);
                 float f    = mask(i.worldPos, _PainterPosition, _Radius, _Hardness);//0~1
                 float edge = f * _Strength;
-                return lerp(col, _PainterColor, edge);
+                return lerp(col, _PainterColor, edge);//背景色とブラシの色の間を補間
             }
             ENDCG
         }
