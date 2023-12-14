@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/_Sample_BasicProgram/Etc/Test_Shaderetc/Mesh_Cut/Mesh_Cut.unity
+- path: Assets/_1Sample_BasicProgram/01_InputSystem_(Singleton)/PlayerInputScene.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
