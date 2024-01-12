@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/_1Sample_BasicProgram/01_InputSystem_(Singleton)/PlayerInputScene.unity
+- path: Assets/_1_Sample_BasicProgram/Etc/Test_Program_etc/Endless/Endless.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
